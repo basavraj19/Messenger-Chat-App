@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="title">
+                <img src="./MessengerICON.png" alt="Messenger">
+                <h1>Messenger</h1>
+            </div>
+            <button id="btn" type="button">
+                <img src="./HamburgerICON.png" alt="HamburgerICON">
+            </button>
+        </header>
+
+        <div class="container">
+            <div id="user-window">
+
+                <div id="user-head">
+                    <h1>Contacts</h1>
+                </div>
+
+                <div id="user-list">
+                    <p>Basavraj</p>
+                    <p>Bhuvan</p>
+                    <p>Rahul</p>
+                </div>
+            </div>
+
+            <div id="chat-window">
+
+                <div id="user-name">
+                    <h1>Basavraj</h1>
+                </div>
+
+                <div id="chats">
+
+                    <div id="incomming" class="message">
+                    </div>
+
+                    <div id="outgoing" class="message">
+
+                    </div>
+                </div>
+
+                <div id="user-input">
+                    <input id="new-message" type="text" placeholder="Type your message">
+                    <button id="send">SEND</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
